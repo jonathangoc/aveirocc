@@ -11,4 +11,4 @@ Join our weekly group rides led by friendly members of the club based around Ave
 Head to the GET IN TOUCH section and submit your application.
 
 ## Events
-Future Events are coming up.
+Future Events are coming up. Stay tuned.
