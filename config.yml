@@ -1,0 +1,40 @@
+baseURL: ""
+languageCode: en-us
+Title: ACC
+Subtitle: The Coolest Cycling Club in Aveiro, Portugal.
+theme: PaperMod
+
+enableRobotsTXT: true
+
+menu:
+  main:
+    - identifier: theclub
+      name: THE CLUB
+      url: /theclub/
+      weight: 10 
+    - identifier: community
+      name: COMMUNITY
+      url: /community/
+      weight: 20
+    - identifier: ridesandexperiences
+      name: RIDES AND EXPERIENCES
+      url: /ridesandexperiences/
+      weight: 30
+    - identifier: getintouch
+      name: GET IN TOUCH
+      url: /getintouch/
+      weight: 40
+
+params:
+  defaultTheme: light
+  disableThemeToggle: true
+  homeInfoParams:
+    Title: Welcome to Aveiro Cycling Club.
+    Content: Enjoy the ride!
+  socialIcons:
+    - name: instagram
+      url: "https://www.instagram.com/aveiro.cc"
+    - name: strava
+      url: "https://www.strava.com/clubs/aveirocc"
+  label:
+    icon: "/static/favicon.ico"
