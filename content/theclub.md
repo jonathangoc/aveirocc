@@ -16,3 +16,13 @@ You can get deeply involved in the community and volunteer yourself to be a Lead
 - Setting up rides
 - Supporting and looking after members of the community
 - Follow and teach the values of our community
+
+# Our Values
+
+**Safety** - Ride safe and look after others.
+
+**Social Responsibility** - Accepting responsibility and apologising to those affected by our mistakes. Drivers are not perfect and neither do we.
+
+**Inclusion** - Being respectful of differing opinions, viewpoints, and experiences
+
+**Giving Back** - Demonstrating empathy and kindness toward other people
