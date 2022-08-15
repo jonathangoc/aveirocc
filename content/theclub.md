@@ -23,6 +23,6 @@ You can get deeply involved in the community and volunteer yourself to be a Lead
 
 **Social Responsibility** - Accepting responsibility and apologising to those affected by our mistakes. Drivers are not perfect and neither do we.
 
-**Inclusion** - Being respectful of differing opinions, viewpoints, and experiences
+**Inclusion** - Being respectful of differing opinions, viewpoints, and experiences.
 
-**Giving Back** - Demonstrating empathy and kindness toward other people
+**Giving Back** - Demonstrating empathy and kindness toward member of the community and other people.
