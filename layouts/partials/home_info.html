@@ -1,0 +1,32 @@
+{{- with site.Params.homeInfoParams }}
+<article class="home-info">
+    <header class="entry-header">
+        <h1>{{ .Title | markdownify }}</h1>
+    </header>
+    <div class="entry-content">
+        {{ .Content | markdownify }}
+    </div>
+    <body>
+        <div class="row" style="display: flex ; ">
+            <div class="column" style="flex: 50%; padding: 5px;">
+              <img src="{{- site.Params.homeInfoParams.Image1 | absURL -}}" alt="ACC1" style="max-width: 100%; height: auto;">
+            </div>
+            <div class="column" style="flex: 50%; padding: 5px;">
+               <img src="{{- site.Params.homeInfoParams.Image2 | absURL -}}" alt="ACC2" style="max-width: 100%; height: auto;">
+            </div>
+        </div>
+        <div class="row" style="display: flex ; ">
+            <div class="column" style="flex: 50%; padding: 5px;">
+               <img src="{{- site.Params.homeInfoParams.Image3 | absURL -}}" alt="ACC3" style="max-width: 100%; height: auto;">
+            </div>
+            <div class="column" style="flex: 50%; padding: 5px;">
+               <img src="{{- site.Params.homeInfoParams.Image4 | absURL -}}" alt="ACC4" style="max-width: 100%; height: auto;">
+            </div>
+        </div>
+    </body>
+    <br>
+    <footer class="entry-footer" style="text-align: center;">
+        {{ partial "social_icons.html" site.Params.socialIcons }}
+    </footer>
+</article>
+{{- end -}}

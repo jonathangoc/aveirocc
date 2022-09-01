@@ -1,21 +1,32 @@
 baseURL: "https://www.aveiro.cc"
 languageCode: en-us
-Title: ACC
-Subtitle: The Coolest Cycling Club in Aveiro, Portugal.
+Title: Aveiro Cycling Club
+Subtitle: "The Coolest Cycling Club in Aveiro, Portugal."
 theme: PaperMod
 
 enableRobotsTXT: true
+buildDrafts: false
+buildFuture: false
+buildExpired: false
 
+minify:
+  disableXML: true
+  minifyOutput: true
+
+#Adding Google Analytics
+googleAnalytics: G-R5NE3Q9WBH
+
+#menu
 menu:
   main:
     - identifier: theclub
       name: THE CLUB
       url: /theclub/
       weight: 10 
-    - identifier: community
-      name: COMMUNITY
-      url: /community/
-      weight: 20
+    #- identifier: community
+    #  name: COMMUNITY
+    #  url: /community/
+    #  weight: 20
     - identifier: ridesandexperiences
       name: RIDES AND EXPERIENCES
       url: /ridesandexperiences/
@@ -25,16 +36,32 @@ menu:
       url: /getintouch/
       weight: 40
 
+
+#site parameters
 params:
+  env: production # to enable google analytics, opengraph, twitter-cards and schema.
+  analytics:
+    google:
+      SiteVerificationTag: "G-R5NE3Q9WBH"
   defaultTheme: light
   disableThemeToggle: true
   homeInfoParams:
     Title: Welcome to Aveiro Cycling Club.
     Content: Enjoy the ride!
+    Image1: "/img/acc1.jpg"
+    Image2: "/img/acc2.jpg"
+    Image3: "/img/acc3.jpg"
+    Image4: "/img/accc.jpg"
   socialIcons:
     - name: instagram
       url: "https://www.instagram.com/aveiro.cc"
     - name: strava
       url: "https://www.strava.com/clubs/aveirocc"
-  label:
-    icon: "/static/favicon.ico"
+  titlemainpage: ACC
+
+#assets
+assets:
+  favicon: "/img/favicon.ico"
+  favicon16x16:  "/img/favicon-16x-16.png"
+  favicon32x32:  "/img/favicon-32x32.png"
+  apple_touch_icon:  "/img/apple-touch-icon.png"
