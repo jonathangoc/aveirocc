@@ -31,9 +31,9 @@ menu:
       name: RIDES AND EXPERIENCES
       url: /ridesandexperiences/
       weight: 30
-    - identifier: getintouch
-      name: GET IN TOUCH
-      url: /getintouch/
+    - identifier: joinus
+      name: JOIN US!
+      url: /joinus/
       weight: 40
 
 
@@ -51,7 +51,7 @@ params:
     Image1: "/img/acc1.jpg"
     Image2: "/img/acc2.jpg"
     Image3: "/img/acc3.jpg"
-    Image4: "/img/accc.jpg"
+    Image4: "/img/acc4.jpg"
   socialIcons:
     - name: instagram
       url: "https://www.instagram.com/aveiro.cc"

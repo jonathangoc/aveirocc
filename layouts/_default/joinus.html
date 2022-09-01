@@ -1,0 +1,36 @@
+{{- define "main" }}
+
+<article class="post-single">
+  {{- if .Content }}
+  <div class="post-content">
+    {{- if not (.Param "disableAnchoredHeadings") }}
+    {{- partial "anchored_headings.html" .Content -}}
+    {{- else }}{{ .Content }}{{ end }}
+  </div>
+
+  {{- end }}
+    <!-- Google inline form begin -->
+    <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSeJOyjVy-s8CrCKAoQFETeLNz-8knhSo8wDkT-rh7zhKiy2Vw/viewform?embedded=true" width="100%" height="1900px" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
+    <!-- Google inline form end -->
+
+  <footer class="post-footer">
+    {{- $tags := .Language.Params.Taxonomies.tag | default "tags" }}
+    <ul class="post-tags">
+      {{- range ($.GetTerms $tags) }}
+      <li><a href="{{ .Permalink }}">{{ .LinkTitle }}</a></li>
+      {{- end }}
+    </ul>
+    {{- if (.Param "ShowPostNavLinks") }}
+    {{- partial "post_nav_links.html" . }}
+    {{- end }}
+    {{- if (and site.Params.ShowShareButtons (ne .Params.disableShare true)) }}
+    {{- partial "share_icons.html" . -}}
+    {{- end }}
+  </footer>
+
+  {{- if (.Param "comments") }}
+  {{- partial "comments.html" . }}
+  {{- end }}
+</article>
+
+{{- end }}{{/* end main */}}
