@@ -14,7 +14,7 @@ minify:
   minifyOutput: true
 
 #Adding Google Analytics
-googleAnalytics: G-R5NE3Q9WBH
+#googleAnalytics: G-R5NE3Q9WBH
 
 #menu
 menu:
@@ -47,7 +47,7 @@ params:
   disableThemeToggle: true
   homeInfoParams:
     Title: Welcome to Aveiro Cycling Club.
-    Content: Enjoy the ride!
+    Content: The coolest cycling community in Aveiro, Portugal.
     Image1: "/img/acc1.jpg"
     Image2: "/img/acc2.jpg"
     Image3: "/img/acc3.jpg"

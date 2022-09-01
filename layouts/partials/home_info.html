@@ -3,7 +3,7 @@
     <header class="entry-header">
         <h1>{{ .Title | markdownify }}</h1>
     </header>
-    <div class="entry-content">
+    <div class="entry-content" style="font-size: 18px;">
         {{ .Content | markdownify }}
     </div>
     <body>
@@ -24,6 +24,10 @@
             </div>
         </div>
     </body>
+    <br>
+    <div class="entry-content" style="font-size: 18px; text-align: center;">
+        Enjoy the ride!
+    </div>
     <br>
     <footer class="entry-footer" style="text-align: center;">
         {{ partial "social_icons.html" site.Params.socialIcons }}
