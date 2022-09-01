@@ -14,7 +14,7 @@ minify:
   minifyOutput: true
 
 #Adding Google Analytics
-#googleAnalytics: G-R5NE3Q9WBH
+googleAnalytics: G-R5NE3Q9WBH
 
 #menu
 menu:
@@ -22,11 +22,7 @@ menu:
     - identifier: theclub
       name: THE CLUB
       url: /theclub/
-      weight: 10 
-    #- identifier: community
-    #  name: COMMUNITY
-    #  url: /community/
-    #  weight: 20
+      weight: 20 
     - identifier: ridesandexperiences
       name: RIDES AND EXPERIENCES
       url: /ridesandexperiences/
@@ -34,7 +30,7 @@ menu:
     - identifier: joinus
       name: JOIN US!
       url: /joinus/
-      weight: 40
+      weight: 10
 
 
 #site parameters
