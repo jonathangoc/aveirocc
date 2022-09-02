@@ -1,0 +1,63 @@
+{{- define "main" }}
+
+<article class="post-single">
+  <div class="post-content">
+    <h1>What's Aveiro Cycling Club? </h1>
+    <p>The Aveiro Cycling Club is a local community of passionate and active cyclists.</p>
+    <p>You can connect to hundreds of local members through our daily rides, group chats and social platforms.</p>
+    <div class="row" style="display: flex ; ">
+      <div class="column" style="flex: 50%; padding: 5px;">
+        <img src="/img/club1.jpg" alt="CLUB1" style="max-width: 100%; height: auto;">
+      </div>
+      <div class="column" style="flex: 50%; padding: 5px;">
+         <img src="/img/club2.jpg" alt="CLUB2" style="max-width: 100%; height: auto;">
+      </div>
+    </div>
+
+    <h1>Become a Lead Rider</h1>
+    <p>You can get deeply involved in the community and volunteer yourself to be a <span style="background-color:#9967e0d9">Lead Rider</span> by:</p>
+    <ul>
+      <li>Being friendly and welcoming to everyone.</li>
+      <li>Creating equal opportunities for our members to connect.</li>
+      <li>Setting up rides.</li>
+      <li>Supporting and looking after members of the community.</li>
+      <li>Follow and teach the values of our community.</li>
+    </ul>  
+    <div class="row" style="display: flex ; ">
+      <div class="column" style="flex: 50%; padding: 5px;">
+        <img src="/img/club3.jpg" alt="CLUB3" style="max-width: 100%; height: auto;">
+      </div>
+      <div class="column" style="flex: 50%; padding: 5px;">
+         <img src="/img/club3.jpg" alt="CLUB4" style="max-width: 100%; height: auto;">
+      </div>
+    </div>
+
+    <h1>Our Values</h1>
+      <p><span style="/* background-color:#67e0d6d9; */ font-weight: bold; font-size: 24px;">Safety</span><br>Ride safe and look after others.<br></p>
+      <p><span style="/* background-color:#67b8e0d9; */ font-weight: bold; font-size: 24px;">Inclusion</span><br>Being respectful of differing opinions, viewpoints, and experiences.<br></p>
+      <p><span style="/* background-color:#676de0d9; */ font-weight: bold; font-size: 24px;">Social Responsibility</span><br>Accepting responsibility and apologising to those affected by our mistakes. Drivers are not perfect and neither do we.<br></p>
+      <p><span style="/* background-color:#a967e0d9; */ font-weight: bold; font-size: 24px;">Giving Back</span><br>Demonstrating empathy and kindness toward member of the community and other people.<br></p>
+      <p><span style="/* background-color:#e067c4d9; */ font-weight: bold; font-size: 24px;">Joy</span><br>We want every member of the community to have fun. Shared pain glues us together and makes our rides more enjoyable.<br></p>
+
+  </div>
+  <footer class="post-footer">
+    {{- $tags := .Language.Params.Taxonomies.tag | default "tags" }}
+    <ul class="post-tags">
+      {{- range ($.GetTerms $tags) }}
+      <li><a href="{{ .Permalink }}">{{ .LinkTitle }}</a></li>
+      {{- end }}
+    </ul>
+    {{- if (.Param "ShowPostNavLinks") }}
+    {{- partial "post_nav_links.html" . }}
+    {{- end }}
+    {{- if (and site.Params.ShowShareButtons (ne .Params.disableShare true)) }}
+    {{- partial "share_icons.html" . -}}
+    {{- end }}
+  </footer>
+
+  {{- if (.Param "comments") }}
+  {{- partial "comments.html" . }}
+  {{- end }}
+</article>
+
+{{- end }}{{/* end main */}}
